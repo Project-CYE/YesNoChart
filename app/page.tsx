@@ -1,16 +1,22 @@
-import { Box, HStack, Text } from "@chakra-ui/react";
+"use client";
 
-export default function Home() {
+import HomeCard from "../components/ui/card";
+
+const Home = () => {
+  const buttons = [
+    { url: "https://yanma-empire.net", label: "minecraft" },
+    { url: "https://yanma-empire.net", label: "建築でのルール" },
+    { url: "https://yanma-empire.net", label: "サーバーでのルール" },
+    { url: "https://yanma-empire.net", label: "その他" },
+  ];
+
   return (
-    <HStack display="flex" justifyContent="center">
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        height="100vh"
-      >
-        <Text textStyle="5xl">GoodMorning1319</Text>
-      </Box>
-    </HStack>
+    <HomeCard
+      title={"CYE ヘルプページへようこそ"}
+      subTitle={"サポートが必要な項目をお選びください"}
+      buttons={buttons}
+    />
   );
-}
+};
+
+export default Home;

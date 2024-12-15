@@ -1,6 +1,16 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Box, HStack, Text } from "@chakra-ui/react";
 
 export default function Home() {
-  return <div>goodmorning1319</div>;
+  return (
+    <HStack display="flex" justifyContent="center">
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        height="100vh"
+      >
+        <Text textStyle="5xl">GoodMorning1319</Text>
+      </Box>
+    </HStack>
+  );
 }

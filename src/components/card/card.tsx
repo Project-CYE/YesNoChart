@@ -32,7 +32,13 @@ const HomeCard: React.FC<Tprops> = ({ title, subTitle, buttons }) => {
           borderRadius="10px"
         >
           <Card.Title textStyle="4xl">{title}</Card.Title>
-          <Card.Description textStyle="2xl">{subTitle}</Card.Description>
+          <Card.Description
+            textStyle="2xl"
+            textAlign="center"
+            whiteSpace="pre-wrap"
+          >
+            {subTitle}
+          </Card.Description>
           <Flex
             direction={buttons.length <= 2 ? "row" : "column"}
             justifyContent="center"

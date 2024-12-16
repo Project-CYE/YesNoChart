@@ -1,6 +1,6 @@
 "use client";
 
-import HomeCard from "../components/ui/card";
+import HomeCard from "@/components/card/card";
 
 const Home = () => {
   const buttons = [

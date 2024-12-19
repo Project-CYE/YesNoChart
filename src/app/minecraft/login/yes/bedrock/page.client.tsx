@@ -4,7 +4,7 @@ import HomeCard from "@/components/card/card";
 
 const Minecraft4thBranchLoginYesBedrockPage = () => {
   const buttons = [
-    { url: "/minecraft/5thBranch/login/yes/bedrock/yes", label: "はい" },
+    { url: "/minecraft/login/yes/bedrock/yes", label: "はい" },
     { url: "/others/1stBranch", label: "いいえ" },
   ];
 

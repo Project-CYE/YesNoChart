@@ -6,7 +6,7 @@ const Minecraft3ndBranchLoginYesPage = () => {
   const buttons = [
     { url: "/others/1stBranch", label: "JavaEdition" },
     {
-      url: "/minecraft/4thBranch/login/yes/bedrock",
+      url: "/minecraft/login/yes/bedrock",
       label: "BedrockEdition(統合版)",
     },
   ];

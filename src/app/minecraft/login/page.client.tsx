@@ -4,7 +4,7 @@ import HomeCard from "@/components/card/card";
 
 const Minecraft2ndBranchLoginPage = () => {
   const buttons = [
-    { url: "/minecraft/3ndBranch/login/yes", label: "はい" },
+    { url: "/minecraft/login/yes", label: "はい" },
     { url: "/others/1stBranch", label: "いいえ" },
   ];
 

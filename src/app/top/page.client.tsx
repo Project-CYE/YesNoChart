@@ -4,7 +4,7 @@ import HomeCard from "@/components/card/card";
 
 const TopPage = () => {
   const buttons = [
-    { url: "/minecraft/1stBranch", label: "minecraft" },
+    { url: "/minecraft", label: "minecraft" },
     { url: "/others/1stBranch", label: "建築でのルール" },
     { url: "/others/1stBranch", label: "サーバーでのルール" },
     { url: "/others/1stBranch", label: "その他" },

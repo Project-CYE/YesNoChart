@@ -4,9 +4,9 @@ import HomeCard from "@/components/card/card";
 
 const TopPage = () => {
   const buttons = [
-    { url: "https://yanma-empire.net", label: "minecraft" },
-    { url: "https://yanma-empire.net", label: "建築でのルール" },
-    { url: "https://yanma-empire.net", label: "サーバーでのルール" },
+    { url: "/minecraft/1stBranch", label: "minecraft" },
+    { url: "/others/1stBranch", label: "建築でのルール" },
+    { url: "/others/1stBranch", label: "サーバーでのルール" },
     { url: "/others/1stBranch", label: "その他" },
   ];
 

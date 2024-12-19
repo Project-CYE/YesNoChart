@@ -1,5 +1,4 @@
-import { Box, Card, HStack, VStack, Flex } from "@chakra-ui/react";
-import CardButton from "./card-button";
+import { Box, Button, Flex, Text, Link, VStack } from "@chakra-ui/react";
 
 type ButtonProps = {
   url: string;
@@ -14,45 +13,65 @@ type Tprops = {
 
 const HomeCard: React.FC<Tprops> = ({ title, subTitle, buttons }) => {
   return (
-    <HStack display="flex" justifyContent="center">
+    <VStack
+      direction="column"
+      display="flex"
+      background="linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%)"
+    >
       <Box
         display="flex"
         justifyContent="center"
         alignItems="center"
-        height="100vh"
-        width="50%"
+        flexGrow="column"
+        height="96.4vh"
+        width="100%"
       >
-        <Card.Root
+        <Box
           display="flex"
           justifyContent="center"
           alignItems="center"
           flexFlow="column"
-          p="30px"
-          border="2px solid black"
-          borderRadius="10px"
+          gapY="25px"
         >
-          <Card.Title textStyle="4xl">{title}</Card.Title>
-          <Card.Description
+          <Text textStyle="4xl" color="white">
+            {title}
+          </Text>
+          <Text
             textStyle="2xl"
             textAlign="center"
             whiteSpace="pre-wrap"
+            color="white"
           >
             {subTitle}
-          </Card.Description>
+          </Text>
           <Flex
             direction={buttons.length <= 2 ? "row" : "column"}
             justifyContent="center"
             alignItems="center"
             marginTop="20px"
-            gap="10px"
+            gap="20px"
           >
             {buttons.map((button, index) => (
-              <CardButton key={index} url={button.url} label={button.label} />
+              <Link href={button.url} key={index}>
+                <Button
+                  size="xl"
+                  width="300px"
+                  colorPalette="green"
+                  color="white"
+                  variant="outline"
+                  _hover={{
+                    color: "green",
+                  }}
+                >
+                  {button.label}
+                </Button>
+              </Link>
             ))}
           </Flex>
-        </Card.Root>
+        </Box>
       </Box>
-    </HStack>
+      <Text color="white">© 2024 Project CYE</Text>
+    </VStack>
   );
 };
 

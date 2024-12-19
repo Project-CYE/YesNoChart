@@ -1,5 +1,6 @@
 "use client";
 
+import Background from "@/components/background";
 import HomeCard from "@/components/card/card";
 
 const TopPage = () => {
@@ -11,11 +12,12 @@ const TopPage = () => {
   ];
 
   return (
-    <HomeCard
-      title={"CYE ヘルプページへようこそ"}
-      subTitle={"サポートが必要な項目をお選びください"}
-      buttons={buttons}
-    />
+    // <HomeCard
+    //   title={"CYE ヘルプページへようこそ"}
+    //   subTitle={"サポートが必要な項目をお選びください"}
+    //   buttons={buttons}
+    // />
+    <Background />
   );
 };
 

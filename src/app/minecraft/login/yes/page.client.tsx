@@ -1,5 +1,6 @@
 "use client";
 
+import Background from "@/components/background/background";
 import HomeCard from "@/components/card/card";
 
 const Minecraft3ndBranchLoginYesPage = () => {
@@ -12,11 +13,13 @@ const Minecraft3ndBranchLoginYesPage = () => {
   ];
 
   return (
-    <HomeCard
-      title={"お使いのソフトを選択してください。"}
-      subTitle={"当てはまる解答をお選びください"}
-      buttons={buttons}
-    />
+    <Background>
+      <HomeCard
+        title={"お使いのソフトを選択してください。"}
+        subTitle={"当てはまる解答をお選びください"}
+        buttons={buttons}
+      />
+    </Background>
   );
 };
 

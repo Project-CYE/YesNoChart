@@ -1,5 +1,6 @@
 "use client";
 
+import Background from "@/components/background/background";
 import HomeCard from "@/components/card/card";
 
 const Minecraft6thBranchLoginYesBedrockYesNoPage = () => {
@@ -8,11 +9,13 @@ const Minecraft6thBranchLoginYesBedrockYesNoPage = () => {
   ];
 
   return (
-    <HomeCard
-      title={"ホワイトリスト手続きが必要です"}
-      subTitle={"以下の手順に則って設定してください。"}
-      buttons={buttons}
-    />
+    <Background>
+      <HomeCard
+        title={"ホワイトリスト手続きが必要です"}
+        subTitle={"以下の手順に則って設定してください。"}
+        buttons={buttons}
+      />
+    </Background>
   );
 };
 

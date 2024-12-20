@@ -1,15 +1,10 @@
-"use client"
+"use client";
 
-import { ChakraProvider, defaultSystem } from "@chakra-ui/react"
-import {
-  ColorModeProvider,
-  type ColorModeProviderProps,
-} from "./color-mode"
+// ColorModeProvider をエクスポートしている color-mode.tsx からインポート
+import { ColorModeProvider } from "./color-mode";
+import type { ThemeProviderProps } from "next-themes";
 
-export function Provider(props: ColorModeProviderProps) {
-  return (
-    <ChakraProvider value={defaultSystem}>
-      <ColorModeProvider {...props} />
-    </ChakraProvider>
-  )
+// ThemeProviderProps型を使って Provider コンポーネントを定義
+export function Provider(props: ThemeProviderProps) {
+  return <ColorModeProvider {...props} />;
 }

@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text, Link, VStack } from "@chakra-ui/react";
+import { Box, Button, Flex, Text, Link } from "@chakra-ui/react";
 
 type ButtonProps = {
   url: string;

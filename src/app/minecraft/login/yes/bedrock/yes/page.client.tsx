@@ -1,5 +1,6 @@
 "use client";
 
+import Background from "@/components/background/background";
 import HomeCard from "@/components/card/card";
 
 const Minecraft5thBranchLoginYesBedrockyesPage = () => {
@@ -9,11 +10,13 @@ const Minecraft5thBranchLoginYesBedrockyesPage = () => {
   ];
 
   return (
-    <HomeCard
-      title={"ホワイトリスト手続きを行いましたか？"}
-      subTitle={"当てはまる解答をお選びください"}
-      buttons={buttons}
-    />
+    <Background>
+      <HomeCard
+        title={"ホワイトリスト手続きを行いましたか？"}
+        subTitle={"当てはまる解答をお選びください"}
+        buttons={buttons}
+      />
+    </Background>
   );
 };
 

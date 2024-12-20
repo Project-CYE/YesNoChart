@@ -1,5 +1,6 @@
 "use client";
 
+import Background from "@/components/background/background";
 import HomeCard from "@/components/card/card";
 
 const Minecraft1stBranchPage = () => {
@@ -11,11 +12,13 @@ const Minecraft1stBranchPage = () => {
   ];
 
   return (
-    <HomeCard
-      title={"minecraftに関するヘルプ"}
-      subTitle={"サポートが必要な項目をお選びください"}
-      buttons={buttons}
-    />
+    <Background>
+      <HomeCard
+        title={"minecraftに関するヘルプ"}
+        subTitle={"サポートが必要な項目をお選びください"}
+        buttons={buttons}
+      />
+    </Background>
   );
 };
 

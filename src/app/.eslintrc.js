@@ -1,0 +1,10 @@
+module.exports = {
+  extends: [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+  ],
+  rules: {
+    "@typescript-eslint/no-empty-object-type": "off",
+  },
+};
